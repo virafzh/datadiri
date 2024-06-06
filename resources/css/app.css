@@ -1,0 +1,166 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.hero h1 , 
+.hero h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-shadow: white;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    width: auto;
+    height: max-content;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.footer {
+    background-color: rgb(32, 18, 1);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+
+}
+
+table.ws-table-all{
+    margin:20px 0}
+.ws-table-all {border-collapse:collapse;border-spacing:0;width:100%;display:table;border:1px solid #ccc}
+.ws-table-all tr {border-bottom:1px solid #ddd}
+.ws-table-all tr:nth-child(odd) {background-color:#fff}.ws-table-all tr:nth-child(even){background-color:#E7E9EB}
+.ws-table-all td,.ws-table-all th {padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.ws-table-all th:first-child, .ws-table-all td:first-child{padding-left:16px}
+
+
+.text-navbar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.underline-heading {
+    display: inline-block;
+    position: relative;
+    color: rgb(43, 26, 6);
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.underline-heading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px; /* Ubah tinggi garis sesuai kebutuhan */
+    left: 0;
+    bottom: -5px; /* Jarak garis dari teks */
+    background-color: #000; /* Warna garis */
+    color: rgb(43, 26, 6);
+}
+.container-fluid h1 {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgb(43, 26, 6);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.hobby-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antara gambar */
+    margin-top: 20px;
+    margin: 5px;
+    padding: 2px;
+}
+.hobby-image {
+    max-width: 25%; /* Sesuaikan lebar gambar */
+    height: auto; /* Pertahankan rasio aspek gambar */
+    border-radius: 35px; /* Menambahkan border radius untuk membuat gambar lebih menarik */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk efek 3D */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+.hobby-image:hover {
+    transform: scale(1.05); /* Membesarkan gambar saat hover */
+    opacity: 0.8;
+}
+.collage {
+display: flex;
+overflow-x: auto;
+gap: 5px; /* Gap between photos */
+padding: 5px;
+max-width: 100vw;
+align-items: center;
+}
+.activity-images {
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+transition: transform 0.3s ease; /* Hover effect */
+flex-shrink: 0;
+width: 100px;
+}
+.activity-images:hover {
+transform: scale(1.05); /* Enlarge on hover */
+}
+.activity-images img {
+max-width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+/* Additional styles for an aesthetic look */
+.activity-images:nth-child(odd) {
+    transform: rotate(3deg); /* Rotate odd photos slightly */
+}
+.activity-images:nth-child(even) {
+    transform: rotate(-3deg); /* Rotate even photos slightly */
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+@media (min-width: 768px) {
+    .container {
+        background-color: white;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
